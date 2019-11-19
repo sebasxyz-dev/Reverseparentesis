@@ -29,7 +29,9 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
     - name: SonarCloud Scan
-      uses: SonarSource/sonarcloud-github-action@v1.1 
+      uses: SonarSource/sonarcloud-github-action@v1.1
+      env:
+        SONAR_TOKEN: ${{secrets.fc704b1ad5e4c6945b2b4f017eac126b4fc477bf}}  
     - name: npm install, build, and test
       run: |
         # Build and test the project, then
