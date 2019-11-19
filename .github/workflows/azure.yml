@@ -28,10 +28,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ env.NODE_VERSION }}
-    - name: SonarCloud Scan
-      uses: SonarSource/sonarcloud-github-action@v1.1
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
     - name: npm install, build, and test
       run: |
         # Build and test the project, then
