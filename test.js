@@ -22,7 +22,7 @@ function StringParethesisReverse(cadena) {
         console.log(apilar[0].join(""));
         return apilar[0].join("");
         
-};
+}
 
 
 
@@ -45,4 +45,4 @@ describe ('StringParethesisReverse', function(){
         expect(result).to.equal('casoldra')
     }); 
 
-});
+})
