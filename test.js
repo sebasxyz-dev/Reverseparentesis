@@ -1,6 +1,6 @@
 const llamado = require('./subfunciones')
 
-chai = require ("chai");
+let chai = require ("chai");
 var expect = chai.expect;
 
 function StringParethesisReverse(cadena) {
